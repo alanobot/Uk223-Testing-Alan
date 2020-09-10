@@ -60,7 +60,7 @@ dependencies {
     testImplementation "org.assertj:assertj-core:3.13.2"
 
 
-    
+
     // H2 Database Engine
     testImplementation "com.h2database:h2:1.4.199"
 
