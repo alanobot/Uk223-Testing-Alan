@@ -30,7 +30,7 @@ public class AuctionController {
         return new ResponseEntity<>(auctionMapper.toDTO(auctionService.create(auctionMapper.fromDTO(auctionDTO))), HttpStatus.CREATED);
     }
 
-    @GetMapping("/")
+    @GetMapping({"/", ""})
     public ResponseEntity<List<AuctionDTO>> getAll() {
         return new ResponseEntity<>(auctionMapper.toDTOs(auctionService.findAll()), HttpStatus.OK); //responsenetity ist die rückgabe als jason file
     }
